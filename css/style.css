@@ -1,0 +1,181 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /* Tira o sublinhado do link */
+    color: inherit;
+}
+
+ul {
+    list-style: none; /* Tira as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho Principal */
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0 0.5rem;
+    position: sticky; /* Deixa o cabeçalho parado no topo */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Título do Site */
+.site-title {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Navegação Principal */
+.main-nav ul {
+    display: flex; /* Coloca os itens do menu um do lado do outro */
+    justify-content: center; /* Centraliza os itens do menu */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main-nav li {
+    margin: 0 1.5rem;
+}
+
+.main-nav .nav-link {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave ao mouse passar */
+    border-radius: 5px;
+}
+
+.main-nav .nav-link:hover {
+    background-color: #555;
+    color: #ffd700;
+}
+
+/* Estilo para o link ativo (o que está selecionado) */
+.main-nav .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Área de Conteúdo Principal */
+.main-content {
+    max-width: 900px;
+    margin: 2rem auto; /* Centraliza o conteúdo */
+    padding: 2rem;
+    background-color: #fff; /* Fundo branco das seções */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Estilo para as Seções de Conteúdo */
+.content-section {
+    display: none; /* Esconde todas as seções por padrão */
+    padding: 1.5rem 0;
+}
+
+/* Mostra a seção que está ativa */
+.content-section.active {
+    display: block;
+}
+
+/* Estilos de textos e títulos nas seções */
+.content-section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.content-section h3 {
+    color: #555;
+    margin-top: 1.5rem;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.content-section ul {
+    margin-bottom: 1rem;
+}
+
+.content-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para o Formulário de Contato */
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block; /* Rótulo acima do campo */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos dos campos de texto do formulário */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Efeito ao clicar/digitar nos campos */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite mudar a altura da caixa de texto */
+}
+
+/* Estilos para o botão de envio */
+.contact-form button[type="submit"] {
+    background-color: #28a745; /* Cor verde do botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block; /* Botão em uma nova linha */
+    margin: 1rem auto 0; /* Centraliza o botão */
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #218838;
+}
